@@ -25,8 +25,25 @@ image classification
 
             convNets:       tweak the functional form of f
         CNN, convolutional neural network
+        back-propagation
     neural network
+        neural network: bigger = better (but might have to regularize more strongly) - care about "over fitting"
         for 2-layer neural network: f=W2*max(0,W1*X)
-        
-
+        setup
+            activation functions
+                sigmoid
+                    squashes numbers to range (0,1)
+                    problem:
+                      saturated neuron will kill the Gradient
+                max(0,x)
+                    maxout neuron, does not have the basic form of dot product -- nonlinearity
+                    generalizes ReLU and Leaky ReLU
+                    linear regime, does not saturae, gradient will not die
+                    problem: doubles the number of parameters/neuron :(
+                tanh(x)
+        preprocess the data
+            in practice, you can whitening the data
+            normalize the data
+        weight initialization
+            
 ImageNet
