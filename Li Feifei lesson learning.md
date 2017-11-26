@@ -45,5 +45,11 @@ image classification
             in practice, you can whitening the data
             normalize the data
         weight initialization
-            
+            think about the backward pass. what do the gradients look like?
+              all activations become zero! this is called "梯度弥散"
+              W*X gate,
+              so we need reasonable initialization
+            proper initialization is an active area of research
+            gaussian
+
 ImageNet
